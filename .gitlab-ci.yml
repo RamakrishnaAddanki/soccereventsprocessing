@@ -1,0 +1,9 @@
+image: "python:3.7"
+
+stages:
+  - dev
+
+pytest:
+  stage: dev
+  script:
+  - python setup.py bdist_egg
