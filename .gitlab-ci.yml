@@ -15,4 +15,4 @@ pytest:
   artifacts:
     paths:
       - dist/*.egg
-      - scripts/*.sh
+      - scripts/SparkTrigger.sh
