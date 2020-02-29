@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 
-
 spark-submit  \
     --name footballevents \
     --master local[4] \
