@@ -2,8 +2,17 @@ image: "python:3.7"
 
 stages:
   - dev
+  - deploy
 
 pytest:
   stage: dev
   script:
   - python setup.py bdist_egg
+
+  stage: deploy
+  script:
+    - python setup.py bdist_egg
+  artifacts:
+    paths:
+      - dist/*.egg
+
